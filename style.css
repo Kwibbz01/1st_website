@@ -10,7 +10,6 @@
 }
 
 .background {
-    /* border: solid #1c1c1c 2px; */
     overflow: hidden;
     position: relative;
     background-repeat: no-repeat;
@@ -23,7 +22,6 @@ img {
 }
 
 .fadedimage {
-    /* border: solid #1c1c1c 2px; */
     opacity: 0.6;
     position: absolute;
     left: 0;
@@ -70,7 +68,42 @@ a:link {
 
 .navbuttons2 {
     display: flex;
-    margin-right: 5%;
+    margin-right: 15%;
+}
+
+.marquee {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    border: 5px solid #6495ED;
+    background-color: #ffd700;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.marquee p {
+    font-family: "Roboto" sans-serif;
+    font-size: x-large;
+    position: absolute;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    transform: translateX(100%);
+    /* Animate to the left */
+    animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .header {
