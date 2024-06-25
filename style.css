@@ -68,11 +68,11 @@ a:link {
 
 .navbuttons2 {
     display: flex;
-    margin-right: 15%;
+    margin-right: 10%;
 }
 
 .marquee {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 3px #252525;
     border: 5px solid #6495ED;
     background-color: #ffd700;
     overflow: hidden;
@@ -206,8 +206,39 @@ a:link {
     margin-right: 15%;
 }
 
+.aboutus2 {
+    border: solid 10px #6495ED;
+    border-radius: 15%;
+    font-family: "Roboto", sans-serif;
+    font-size: 400%;
+    background-color: #d3d3d3;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
 #jg {
     font-family: ozswizard;
+}
+
+.google-map {
+    border: solid #6495ED 5px;
+    margin-left: 37%;
+    margin-right: 37%;
+    padding-bottom: 20%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
 }
 
 .footer {
